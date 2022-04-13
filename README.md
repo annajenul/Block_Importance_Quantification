@@ -1,5 +1,5 @@
-# Block Importance Quantification
-Interpretation of multiblock artificial neural networks
+# Feature-Block Importance Quantification
+Importance of multiblock artificial neural networks
 
 ## Introduction
 
