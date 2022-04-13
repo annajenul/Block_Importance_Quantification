@@ -1,4 +1,4 @@
-# IMBN
+# Block Importance Quantification
 Interpretation of multiblock artificial neural networks
 
 ## Introduction
