@@ -3,7 +3,10 @@ This repository contains information about the experiments of the paper ....
 Folder description:
 
 #### examples
-- describe
+- The **data** folder contains an R file with code for the simulated datasets and the BCW, and Servo data.
+- Folder **simulation_setups** stores the *.py* files for each simulation dataset S1a-S2c. All setups use the same network strucutre, 30 independent network initializations and the same network parameters. 
+- *S1a.ipynb* is a jupyter notebook and illustrates the analysis for a single simulated dataset. 
+- The notebooks *BCW.ipynb* and *Servo.ipynb* show experiment results from Section 3.2. in the article.
 
 
 ## Experiments
