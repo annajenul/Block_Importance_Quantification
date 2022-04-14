@@ -17,16 +17,13 @@ Folder description:
 Source code for the M-ANN and some help functions.
 
 ## Experiments
-
-% add information about computational power; runtimes; software in general..
-% add that the network is not the main focus of the paper
 We set a random seed in all computations to make the results reproducible.
 The simulation experiments in Section 3.1 were conducted on a *CentOS Linux 7.9.2009, Intel Xeon(R) CPU E5-2650 @ 2.60GHz, 3 GB RAM* cluster where multiple simulations could be started in parallel. For the real world experiments (Section 3.2) we used a local *Ubuntu 20.04.4 LTS, Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz* % RAM information? The average runtimes on the local machine were 35s (S1a), 4s (BCW), and 10s (Servo). 
 
 In the following we describe the network structure of the different experimental setups and datasets. Though, it is important to mention that the focus of the article is not to optimize the network structure but rather the interpreation of a well-performing network.
 
 ### Simulated datasets
-An identical, sequential M-ANN architecture is used for all four datasets, S1-S4. The final structures for input block branches are equal, consisting of 1 input layer and 3 dense layers with 16, 8, and 4 nodes (all with swish activation). The blender network comprises 1 concatenation layer, 2 dense layers with swish activations and 2 nodes each, and 1 output layer containing 1 node (linear activation). We use the RMSprop optimizer to train the network, a batch size of 32, and a learning rate of 1 and 150 epochs. All parameters were determined in a preliminary grid search analysis.
+An identical, sequential M-ANN architecture is used for all six datasets, S1a-S2b. The M-ANN delivered an R2-score >0.9 for all datasets on a separate test dataset and is therefore, ideal to show our concept. The final structures for input block branches are equal, consisting of 1 input layer and 3 dense layers with 16, 8, and 4 nodes (all with swish activation). The blender network comprises 1 concatenation layer, 2 dense layers with swish activations and 2 nodes each, and 1 output layer containing 1 node (linear activation). We use the RMSprop optimizer to train the network, a batch size of 32, and a learning rate of 1 and 150 epochs. All parameters were determined in a preliminary grid search analysis.
 
 <img src="https://github.com/annajenul/Block_Importance_Quantification/blob/master/examples/Simulation_M_ANN.png" width="1400"/> The plot shows the M-ANN structure that is used for all simulation experiments. </img>
 
