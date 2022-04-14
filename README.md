@@ -16,6 +16,7 @@ Folder description:
 ## Experiments
 
 % add information about computational power; runtimes; software in general..
+% add that the network is not the main focus of the paper
 We set a random seed in all computations to make the results reproducible.
 The simulation experiments in Section 3.1 were conducted on a *CentOS Linux 7.9.2009, Intel Xeon(R) CPU E5-2650 @ 2.60GHz, 3 GB RAM* cluster where multiple simulations could be started in parallel. For the real world experiments (Section 3.2) we used a local *Ubuntu 20.04.4 LTS, Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz* % RAM information?
 
@@ -28,7 +29,7 @@ The M-ANN model consists of three input blocks where the structure for each bloc
 ### Servo dataset [[2]](#2)
 The M-ANN structure consists of an input layer, mapped directly to the concatenation layer. The blender part of the network consists of 4 layers with 12, 8, 4, and 2 layers, respectively. Each layer has "swish" activation. The final layer is the output layer with linear activation. To train the network we use a batchsize of 32, 500 epochs, and a learning rate of 5.
 
--
+
 ## References
 <a id="1">[1]</a> 
 Street, W.N., Wolberg, W.H., Mangasarian, O.L.: Nuclear feature extraction for
