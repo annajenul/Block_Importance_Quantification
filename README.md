@@ -3,18 +3,21 @@ This repository contains information about the experiments of the paper **add**.
 Folder description:
 
 ### Repository structure
+#### data:
+- containns all simulated and real world data.
 
-#### examples
-- The **data** folder contains an R file with code for the simulated datasets and the BCW, and Servo data.
-- Folder **simulation_setups** stores the *.py* files for each simulation dataset S1a-S2c. All setups use the same network strucutre, 30 independent network initializations and the same network parameters. 
-- **S1a.ipynb** is a jupyter notebook and illustrates the analysis for a single simulated dataset. 
-- The notebooks **BCW.ipynb** and **Servo.ipynb** show experiment results from Section 3.2. in the article.
+#### evaluations:
+- The **figures** folder contains plots of the network structures for Section 3.1 and 3.2.
+- **notebooks** stores the jupyter notebooks for the BCW and Servo analysis. In addition, the Spearman's rank correlation coefficient calculations are shown in a separate notebook.
 
-#### results
-**results_BCW** and **results_servo** store results for the real world datasets. The subfolder **simulations** contains the results for S1a-S2c, plus the Spearman's rank correlation analysis.
+#### raw_results:
+- contains calculated metrics.
 
-#### src
-Source code for the M-ANN and some help functions.
+#### src:
+- Folder **M_ANN** contains the code for the M-ANN and help functions in python.
+- **data_generation** contains an R-file for the generation of simulated data.
+- **evaluation** stores files for evaluating the M-ANN (in Python) and plotting the results in ggplot, together with a Wilcoxon-test for block differences (R).
+
 
 ## Experiments
 We set a random seed in all computations to make the results reproducible.
