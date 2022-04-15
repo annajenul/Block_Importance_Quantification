@@ -1,5 +1,5 @@
 # Feature-Block Importance Quantification
-This repository contains information about the experiments of the paper **add**. 
+This repository contains information about the experiments of the paper *Ranking Feature-Block Importance in Artificial Multiblock Neural Networks* [[1]](#1). 
 Folder description:
 
 ### Repository structure
@@ -30,20 +30,23 @@ An identical, sequential M-ANN architecture is used for all six datasets, S1a-S2
 
 <img src="https://github.com/annajenul/Block_Importance_Quantification/blob/master/evaluations/figures/Simulation_M_ANN.png" width="1400"/> The plot shows the M-ANN structure that is used for all simulation experiments. </img>
 
-### Breast Cancer Wisconsin dataset [[1]](#1)
+### Breast Cancer Wisconsin dataset [[2]](#2)
 The M-ANN model consists of three input blocks where the structure for each block is sequential with three dense layers and 10 (input), 5, and 2 nodes, respectively, and a "swish" activation function. The blender part concatenates the single blocks and the output via two dense layers with two nodes each and "swish" activation. The batch size, epochs, and learning rate are set to 32, 100, and 0.1.
 
-### Servo dataset [[2]](#2)
+### Servo dataset [[3]](#3)
 The M-ANN structure consists of an input layer, mapped directly to the concatenation layer. The blender part of the network consists of 4 layers with 12, 8, 4, and 2 layers, respectively. Each layer has "swish" activation. The final layer is the output layer with linear activation. To train the network we use a batchsize of 32, 500 epochs, and a learning rate of 5.
 
 
 ## References
 <a id="1">[1]</a> 
+A. Jenul, S. Schrunner, et al. Ranking Feature-Block Importance in Artificial Multiblock Neural Networks. arXiv, 2022.
+
+<a id="2">[2]</a> 
 Street, W.N., Wolberg, W.H., Mangasarian, O.L.: Nuclear feature extraction for
 breast tumor diagnosis. In: Acharya, R.S., Goldgof, D.B. (eds.) Biomedical Image
 Processing and Biomedical Visualization. vol. 1905, pp. 861 – 870. SPIE (1993),
 doi: 10.1117/12.148698.
 
-<a id="2">[2]</a> 
+<a id="3">[3]</a> 
 Quinlan, J.R.: Combining instance-based and model-based learning. In: Interna-
 tional Conference on Machine Learning. pp. 236–243 (1993).
