@@ -21,7 +21,7 @@ Folder description:
 
 ## Experiments
 We set a random seed in all computations to make the results reproducible.
-The simulation experiments in Section 3.1 were conducted on a *CentOS Linux 7.9.2009, Intel Xeon(R) CPU E5-2650 @ 2.60GHz, 3 GB RAM* cluster where multiple simulations could be started in parallel. For the real-world experiments (Section 3.2) we used a local *Ubuntu 20.04.4 LTS, Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz* % RAM information? The average runtimes on the local machine were 35s (S1a), 4s (BCW), and 10s (Servo). 
+The simulation experiments in Section 3.1 were conducted on a *CentOS Linux 7.9.2009, Intel Xeon(R) CPU E5-2650 @ 2.60GHz, 3 GB RAM* cluster where multiple simulations could be started in parallel. For the real-world experiments (Section 3.2) we used a local *Ubuntu 20.04.4 LTS, Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz, 16GB RAM* information? The average runtimes on the local machine were 35s (S1a), 4s (BCW), and 10s (Servo). 
 
 In the following, we describe the network structure of the different experimental setups and datasets. Note that the article's focus is not to optimize the network structure or performance but rather to perform a post-hoc analysis of input block importances on pre-trained networks.
 
