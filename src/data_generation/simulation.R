@@ -33,7 +33,6 @@ target_generator = function(data,
   # n_feats_block ... number of features per block in data <vector>
   # n_imp_feats_block ... number of important features per block in data <vector>
   # imp_feat_weights ... coefficients (matrix) of important features <matrix>
-  # linear ... linear or non-linear connection between target and data <boolean>
   # seed ... reproducibility <integer>
   
   if(!is.null(imp_feat_weights)){
